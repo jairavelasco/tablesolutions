@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link
+      href="./assets/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/jquery.toast.min.css" rel="stylesheet" />
+    <title>TableSolutions</title>
+  </head>
+
+  <body>
+    <div class="top bg-brown py-3">
+      <div class="container">
+        <div class="align-items-center d-grid text-white two-columns">
+          <div>
+            <a href="index.html"><img src="assets/images/logo.png" /></a>
+          </div>
+          <div class="fs-3">TableSolutions</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu bg-grey py-3">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <nav class="d-flex gap-3 gap-md-5">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="tables.html">Tables</a>
+            <a href="games.html">Games</a>
+            <a href="accessories.html">Accessories</a>
+            <a href="support.html">Support</a>
+            <a style="min-width: 100px" href="my_account.html">My Account</a>
+          </nav>
+          <div class="cart">
+            <a href="cart.html">
+              <i class="fa fa-shopping-cart"></i>
+              <span id="total_cart">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content" class="my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-3">
+            <h3 class="text-center">Table Sizes</h3>
+            <p class="text-center">
+              Please fill this form, so that we could know how can we help you!
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <form
+              action="https://webdevbasics.net/scripts/demo.php"
+              method="post"
+            >
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  name="first_name"
+                />
+              </div>
+
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  name="last_name"
+                />
+              </div>
+
+              <div>
+                <h5>Feedback to enhance our product:</h5>
+              </div>
+
+              <div class="form-group mb-3">
+                <label>1. How satisfied are you with our product?</label>
+                <select class="form-control" name="product" size="5" multiple>
+                  <option value="excellent">Excellent</option>
+                  <option value="very_good">Very Good</option>
+                  <option value="good">Good</option>
+                  <option value="fair_enough">Fair Enough</option>
+                  <option value="poor">Poor</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <label>2. How could we develop our customer service?</label>
+                <textarea
+                  name="message"
+                  rows="10"
+                  cols="50"
+                  class="form-control"
+                  placeholder="Please let us know what are your thoughts on how we could improve our customer service."
+                ></textarea>
+              </div>
+
+              <div class="form-group mb-3">
+                <label
+                  >3. Choose what board games do you think is the best:</label
+                >
+                <select
+                  class="form-control"
+                  name="board_games"
+                  size="5"
+                  multiple
+                >
+                  <option value="Dungeons&Dragons">Dungeons & Dragons</option>
+                  <option value="Monopoly">Monopoly</option>
+                  <option value="Scrabble">Scrabble</option>
+                  <option value="Catan">Catan</option>
+                  <option value="Chess">Chess</option>
+                  <option value="Pandemic">Pandemic</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <label>4. How satisfied are you with our services?</label>
+                <select class="form-control" name="services" size="5" multiple>
+                  <option value="very_unsatisfied">Very Unsatisfied</option>
+                  <option value="unsatisfied">Unsatisfied</option>
+                  <option value="neutral">Neutral</option>
+                  <option value="satisfied">Satisfied</option>
+                  <option value="very_satisfied">Very Satisfied</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-3">
+                <label>5. How could we support you better?</label>
+                <textarea
+                  name="support"
+                  rows="10"
+                  cols="50"
+                  class="form-control"
+                  placeholder="Please let us know what are your thoughts on how we could support you better."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-success">Submit</button>
+              <button class="btn btn-dark reset">Reset</button>
+            </form>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="embed-responsive embed-responsive-16by9 mb-3">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/spdescYFqIE?rel=0"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/yyUD07Me6mc?rel=0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="bg-brown py-3 text-white">
+      <div class="container block d-flex gap-3 justify-content-center">
+        <div class="text-center text-md-left">© 2021 TableSolutions</div>
+        <div>Jaira</div>
+        <div>Josiah</div>
+        <div>Scott</div>
+        <div>Gabriela</div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery-3.5.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery.toast.min.js"
+    ></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+  </body>
+</html>
