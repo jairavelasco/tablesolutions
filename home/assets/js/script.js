@@ -26,7 +26,7 @@ $(document).ready(function () {
     const reducer = (previousValue, currentValue) =>
       previousValue + currentValue;
 
-    return array.reduce(reducer);
+    return array.reduce(reducer, 0);
   }
 
   function getTotalUnitPrice() {
@@ -122,7 +122,7 @@ $(document).ready(function () {
     return reduce(array);
   }
 
-  $(".add-to-cart").click(function () {
+  $(".add-to-cart, .btn-add-cart-tables").click(function () {
     let products = [];
     let productStorage = JSON.parse(localStorage.getItem("products"));
     if (productStorage != null) {
